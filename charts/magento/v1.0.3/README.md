@@ -1,5 +1,7 @@
 ## Configuration
 
+hello
+
 The following table lists the configurable parameters of the Magento chart and their default values.
 
 |             Parameter              |               Description                |                         Default                          |
