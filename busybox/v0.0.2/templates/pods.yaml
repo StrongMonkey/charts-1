@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: busybox-deployment
+  labels:
+    app: busybox
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: busybox
+  template:
+    metadata:
+      labels:
+        app: busybox
+    spec:
+      containers:
+      - name: busybox
+        image: busybox
+        imagePullPolicy: Always
+        command:
+         - sleep
+         - "3600"
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: pre-install
+  annotations:
+    "helm.sh/hook": "pre-install"
+spec:
+  template:
+    spec:
+      containers:
+      - name: pre-install
+        image: busybox
+        command: ["sleep", "20"]
+      restartPolicy: Never
