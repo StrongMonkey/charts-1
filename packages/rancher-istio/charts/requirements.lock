@@ -1,0 +1,6 @@
+dependencies:
+- name: rancher-kiali-server
+  repository: file://../../rancher-kiali-server/charts
+  version: 1.22.0
+digest: sha256:e04c25bd4404dc28214b38d33f985df63b0bf79b3342d105da74a7c273a4dd28
+generated: "2020-09-18T17:32:41.671359575Z"
