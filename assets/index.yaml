@@ -581,7 +581,7 @@ entries:
       catalog.cattle.io/ui-component: istio
     apiVersion: v1
     appVersion: 1.7.1
-    created: "2020-09-22T23:01:36.719940837Z"
+    created: "2020-09-23T00:22:12.798261834Z"
     dependencies:
     - alias: kiali
       condition: kiali.enabled
@@ -590,7 +590,7 @@ entries:
       version: 1.23.0
     description: A basic Istio setup that installs with the istioctl. Refer to https://istio.io/latest/
       for details.
-    digest: 6b219faf4a4e00f1f2cde541a6fbb4f14a2dc0893c923bb9ff6ed35fab39d2d0
+    digest: 7f690997e0c215f38166a8df9f823b1ed8904d6dd1711ea115791d22d46241ae
     icon: https://charts.rancher.io/assets/logos/istio.svg
     keywords:
     - networking
@@ -1430,4 +1430,4 @@ entries:
     urls:
     - assets/rio/rio-0.8.000.tgz
     version: 0.8.000
-generated: "2020-09-22T23:01:36.69694189Z"
+generated: "2020-09-23T00:22:12.788820695Z"
